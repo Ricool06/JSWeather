@@ -61,12 +61,12 @@ Drop.prototype.draw = function(){
   }
 }
 //End classes
+
+
 //Start
-var c = document.getElementById("c");
-var ctx = c.getContext("2d");
 var drops = [];
 var splooshes = [];
-var dropCount = 1000;
+var dropCount = 300;
 
 
 for(var i = 0; i < dropCount; i++){
@@ -81,18 +81,12 @@ for(var i = 0; i < dropCount; i++){
     splooshes.push(new Sploosh(0, 0));
 }
 
-setInterval(draw, 20);
-
-function draw() {
-  ctx.beginPath();
-  ctx.clearRect(0,0,c.width,c.height);
-  ctx.closePath();
-
-  for(var i = 0; i < drops.length; i++){
-    drops[i].draw();
+function drawRain() {
+    for(var i = 0; i < drops.length; i++){
+        drops[i].draw();
   }
   for(var i = 0; i < splooshes.length; i++){
-    if(splooshes[i] != null){
+      if(splooshes[i] != null){
         splooshes[i].draw();
     }
 
