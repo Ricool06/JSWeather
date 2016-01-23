@@ -5,7 +5,7 @@ var Sploosh = function(x, y){
   this.thickness = 4;
   this.xvel = (Math.random() - 0.5);
   this.yvel = Math.random() * 4;
-  this.color = 'rgba(0,140,255,0.5)';
+  this.color = 'rgba(0,140,255,0.2)';
 }
 
 Sploosh.prototype.draw = function(){
@@ -36,7 +36,7 @@ var Drop = function(x, y, vel, acc, id){
   this.vel = vel;
   this.acc = acc;
   this.id = id;
-  this.color = 'rgba(0,140,255,0.5)';
+  this.color = 'rgba(0,140,255,0.2)';
 }
 
 Drop.prototype.draw = function(){

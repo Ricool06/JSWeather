@@ -38,3 +38,8 @@ html{
 ::-webkit-scrollbar {
     display: none;
 }
+#buffer{
+    width:100px;
+    height:100px;
+    display: none;
+}
